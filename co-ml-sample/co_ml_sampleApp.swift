@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct co_ml_sampleApp: App {
+    
+    @StateObject private var predictionStatus = PredictionStatus()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(predictionStatus)
         }
     }
 }

@@ -11,6 +11,14 @@
 		A5D6917327EA441E00101791 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6917227EA441E00101791 /* ContentView.swift */; };
 		A5D6917527EA442000101791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D6917427EA442000101791 /* Assets.xcassets */; };
 		A5D6917827EA442000101791 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D6917727EA442000101791 /* Preview Assets.xcassets */; };
+		A5D6917F27EA446600101791 /* ClassificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6917E27EA446600101791 /* ClassificationController.swift */; };
+		A5D6918227EA44C300101791 /* PredictionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918127EA44C300101791 /* PredictionStatus.swift */; };
+		A5D6918927EA466400101791 /* LiveCameraRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918727EA466400101791 /* LiveCameraRepresentable.swift */; };
+		A5D6918A27EA466400101791 /* LiveCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918827EA466400101791 /* LiveCameraViewController.swift */; };
+		A5D6918D27EA48B100101791 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918C27EA48B100101791 /* Constants.swift */; };
+		A5D6919027EA48F900101791 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918F27EA48F900101791 /* Helpers.swift */; };
+		A5D6919427EA69C000101791 /* ToyClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A5D6919327EA69C000101791 /* ToyClassifier.mlmodel */; };
+		A5D6919827EA7AF900101791 /* PetClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A5D6919727EA7AF900101791 /* PetClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,16 @@
 		A5D6917227EA441E00101791 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A5D6917427EA442000101791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5D6917727EA442000101791 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A5D6917E27EA446600101791 /* ClassificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificationController.swift; sourceTree = "<group>"; };
+		A5D6918127EA44C300101791 /* PredictionStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictionStatus.swift; sourceTree = "<group>"; };
+		A5D6918727EA466400101791 /* LiveCameraRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCameraRepresentable.swift; sourceTree = "<group>"; };
+		A5D6918827EA466400101791 /* LiveCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCameraViewController.swift; sourceTree = "<group>"; };
+		A5D6918C27EA48B100101791 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A5D6918F27EA48F900101791 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		A5D6919127EA5B4D00101791 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5D6919327EA69C000101791 /* ToyClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ToyClassifier.mlmodel; sourceTree = "<group>"; };
+		A5D6919727EA7AF900101791 /* PetClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PetClassifier.mlmodel; sourceTree = "<group>"; };
+		A5D6919927EA824B00101791 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +69,16 @@
 		A5D6916F27EA441E00101791 /* co-ml-sample */ = {
 			isa = PBXGroup;
 			children = (
+				A5D6919927EA824B00101791 /* readme.md */,
+				A5D6919127EA5B4D00101791 /* Info.plist */,
 				A5D6917027EA441E00101791 /* co_ml_sampleApp.swift */,
 				A5D6917227EA441E00101791 /* ContentView.swift */,
 				A5D6917427EA442000101791 /* Assets.xcassets */,
+				A5D6918E27EA48BA00101791 /* Helpers */,
+				A5D6918B27EA466800101791 /* CameraViewControllers */,
+				A5D6918627EA44F200101791 /* model */,
+				A5D6918327EA44C900101791 /* Resources */,
+				A5D6918027EA446C00101791 /* Controllers */,
 				A5D6917627EA442000101791 /* Preview Content */,
 			);
 			path = "co-ml-sample";
@@ -65,6 +90,49 @@
 				A5D6917727EA442000101791 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A5D6918027EA446C00101791 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5D6917E27EA446600101791 /* ClassificationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A5D6918327EA44C900101791 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5D6918127EA44C300101791 /* PredictionStatus.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5D6918627EA44F200101791 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A5D6919327EA69C000101791 /* ToyClassifier.mlmodel */,
+				A5D6919727EA7AF900101791 /* PetClassifier.mlmodel */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A5D6918B27EA466800101791 /* CameraViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5D6918727EA466400101791 /* LiveCameraRepresentable.swift */,
+				A5D6918827EA466400101791 /* LiveCameraViewController.swift */,
+			);
+			path = CameraViewControllers;
+			sourceTree = "<group>";
+		};
+		A5D6918E27EA48BA00101791 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A5D6918F27EA48F900101791 /* Helpers.swift */,
+				A5D6918C27EA48B100101791 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +206,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5D6917327EA441E00101791 /* ContentView.swift in Sources */,
+				A5D6917F27EA446600101791 /* ClassificationController.swift in Sources */,
+				A5D6919427EA69C000101791 /* ToyClassifier.mlmodel in Sources */,
+				A5D6918A27EA466400101791 /* LiveCameraViewController.swift in Sources */,
+				A5D6919027EA48F900101791 /* Helpers.swift in Sources */,
+				A5D6918927EA466400101791 /* LiveCameraRepresentable.swift in Sources */,
 				A5D6917127EA441E00101791 /* co_ml_sampleApp.swift in Sources */,
+				A5D6918227EA44C300101791 /* PredictionStatus.swift in Sources */,
+				A5D6918D27EA48B100101791 /* Constants.swift in Sources */,
+				A5D6919827EA7AF900101791 /* PetClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +348,7 @@
 				DEVELOPMENT_TEAM = AVU6LDWEFT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "co-ml-sample/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +379,7 @@
 				DEVELOPMENT_TEAM = AVU6LDWEFT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "co-ml-sample/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
