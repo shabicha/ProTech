@@ -10,7 +10,8 @@ import SwiftUI
 import Vision
 
 class PredictionStatus: ObservableObject {
-    // TODO - replace with the name of your .mlmodel imported into the XCode Project
+    @Published var modelUrl = URL(fileURLWithPath: "")
+    // TODO - replace with the name of your classifier
     @Published var modelObject = Produce()
     
     @Published var topLabel = ""
@@ -19,12 +20,6 @@ class PredictionStatus: ObservableObject {
     // Live prediction results
     @Published var livePrediction: LivePredictionResults = [:]
     
-    func setTopLabel(label: String){
-        self.topLabel = label
-    }
-    func setTopConfidence(confidence: String){
-        self.topConfidence = confidence
-    }
     func setLivePrediction(with results: LivePredictionResults, label: String, confidence: String) {
         livePrediction = results
         topLabel = label

@@ -9,12 +9,9 @@ import Foundation
 import SwiftUI
 import AVFoundation
 
-struct LiveCameraRepresentable: UIViewControllerRepresentable {
-    private var handleObservations: (LivePredictionResults, String, String) -> ()
+struct LiveCameraRepresentable: UIViewControllerRepresentable {    
     
-    init(handleObservations: @escaping (LivePredictionResults, String, String) -> () ) {
-        self.handleObservations = handleObservations
-    }
+    var handleObservations: (LivePredictionResults, String, String) -> ()
     
     func makeUIViewController(context: Context) -> LiveCameraViewController {
         let vc = LiveCameraViewController(handleObservations: handleObservations)
