@@ -7,36 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5AE34F327EE54CD00938E1F /* Produce.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A5AE34F227EE54CD00938E1F /* Produce.mlmodel */; };
+		A5AE34F527EE54EB00938E1F /* mydata.json in Resources */ = {isa = PBXBuildFile; fileRef = A5AE34F427EE54EB00938E1F /* mydata.json */; };
+		A5AE34F727EE557700938E1F /* ClassifierData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AE34F627EE557700938E1F /* ClassifierData.swift */; };
 		A5D6917127EA441E00101791 /* co_ml_sampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6917027EA441E00101791 /* co_ml_sampleApp.swift */; };
 		A5D6917327EA441E00101791 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6917227EA441E00101791 /* ContentView.swift */; };
 		A5D6917527EA442000101791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D6917427EA442000101791 /* Assets.xcassets */; };
 		A5D6917827EA442000101791 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D6917727EA442000101791 /* Preview Assets.xcassets */; };
-		A5D6917F27EA446600101791 /* ClassificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6917E27EA446600101791 /* ClassificationController.swift */; };
 		A5D6918227EA44C300101791 /* PredictionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918127EA44C300101791 /* PredictionStatus.swift */; };
 		A5D6918927EA466400101791 /* LiveCameraRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918727EA466400101791 /* LiveCameraRepresentable.swift */; };
 		A5D6918A27EA466400101791 /* LiveCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918827EA466400101791 /* LiveCameraViewController.swift */; };
 		A5D6918D27EA48B100101791 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918C27EA48B100101791 /* Constants.swift */; };
 		A5D6919027EA48F900101791 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918F27EA48F900101791 /* Helpers.swift */; };
-		A5D6919427EA69C000101791 /* ToyClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A5D6919327EA69C000101791 /* ToyClassifier.mlmodel */; };
-		A5D6919827EA7AF900101791 /* PetClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A5D6919727EA7AF900101791 /* PetClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A5D6916D27EA441E00101791 /* co-ml-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "co-ml-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5AE34F227EE54CD00938E1F /* Produce.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Produce.mlmodel; sourceTree = "<group>"; };
+		A5AE34F427EE54EB00938E1F /* mydata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mydata.json; sourceTree = "<group>"; };
+		A5AE34F627EE557700938E1F /* ClassifierData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierData.swift; sourceTree = "<group>"; };
+		A5D6916D27EA441E00101791 /* co-ml-starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "co-ml-starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D6917027EA441E00101791 /* co_ml_sampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = co_ml_sampleApp.swift; sourceTree = "<group>"; };
 		A5D6917227EA441E00101791 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A5D6917427EA442000101791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5D6917727EA442000101791 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A5D6917E27EA446600101791 /* ClassificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificationController.swift; sourceTree = "<group>"; };
 		A5D6918127EA44C300101791 /* PredictionStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictionStatus.swift; sourceTree = "<group>"; };
 		A5D6918727EA466400101791 /* LiveCameraRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCameraRepresentable.swift; sourceTree = "<group>"; };
 		A5D6918827EA466400101791 /* LiveCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCameraViewController.swift; sourceTree = "<group>"; };
 		A5D6918C27EA48B100101791 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A5D6918F27EA48F900101791 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		A5D6919127EA5B4D00101791 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5D6919327EA69C000101791 /* ToyClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ToyClassifier.mlmodel; sourceTree = "<group>"; };
-		A5D6919727EA7AF900101791 /* PetClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PetClassifier.mlmodel; sourceTree = "<group>"; };
-		A5D6919927EA824B00101791 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,10 +49,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A562F06F27EE5A7900602D4E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A5AE34F627EE557700938E1F /* ClassifierData.swift */,
+				A5AE34F427EE54EB00938E1F /* mydata.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		A5D6916427EA441E00101791 = {
 			isa = PBXGroup;
 			children = (
-				A5D6916F27EA441E00101791 /* co-ml-sample */,
+				A5D6916F27EA441E00101791 /* co-ml-starter */,
 				A5D6916E27EA441E00101791 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,27 +69,26 @@
 		A5D6916E27EA441E00101791 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5D6916D27EA441E00101791 /* co-ml-sample.app */,
+				A5D6916D27EA441E00101791 /* co-ml-starter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A5D6916F27EA441E00101791 /* co-ml-sample */ = {
+		A5D6916F27EA441E00101791 /* co-ml-starter */ = {
 			isa = PBXGroup;
 			children = (
-				A5D6919927EA824B00101791 /* readme.md */,
 				A5D6919127EA5B4D00101791 /* Info.plist */,
 				A5D6917027EA441E00101791 /* co_ml_sampleApp.swift */,
 				A5D6917227EA441E00101791 /* ContentView.swift */,
-				A5D6917427EA442000101791 /* Assets.xcassets */,
 				A5D6918E27EA48BA00101791 /* Helpers */,
+				A562F06F27EE5A7900602D4E /* Data */,
+				A5D6917427EA442000101791 /* Assets.xcassets */,
 				A5D6918B27EA466800101791 /* CameraViewControllers */,
 				A5D6918627EA44F200101791 /* model */,
 				A5D6918327EA44C900101791 /* Resources */,
-				A5D6918027EA446C00101791 /* Controllers */,
 				A5D6917627EA442000101791 /* Preview Content */,
 			);
-			path = "co-ml-sample";
+			path = "co-ml-starter";
 			sourceTree = "<group>";
 		};
 		A5D6917627EA442000101791 /* Preview Content */ = {
@@ -90,14 +97,6 @@
 				A5D6917727EA442000101791 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		A5D6918027EA446C00101791 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				A5D6917E27EA446600101791 /* ClassificationController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		A5D6918327EA44C900101791 /* Resources */ = {
@@ -111,8 +110,7 @@
 		A5D6918627EA44F200101791 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				A5D6919327EA69C000101791 /* ToyClassifier.mlmodel */,
-				A5D6919727EA7AF900101791 /* PetClassifier.mlmodel */,
+				A5AE34F227EE54CD00938E1F /* Produce.mlmodel */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -138,9 +136,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A5D6916C27EA441E00101791 /* co-ml-sample */ = {
+		A5D6916C27EA441E00101791 /* co-ml-starter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5D6917B27EA442000101791 /* Build configuration list for PBXNativeTarget "co-ml-sample" */;
+			buildConfigurationList = A5D6917B27EA442000101791 /* Build configuration list for PBXNativeTarget "co-ml-starter" */;
 			buildPhases = (
 				A5D6916927EA441E00101791 /* Sources */,
 				A5D6916A27EA441E00101791 /* Frameworks */,
@@ -150,9 +148,9 @@
 			);
 			dependencies = (
 			);
-			name = "co-ml-sample";
-			productName = "co-ml-sample";
-			productReference = A5D6916D27EA441E00101791 /* co-ml-sample.app */;
+			name = "co-ml-starter";
+			productName = "co-ml-starter";
+			productReference = A5D6916D27EA441E00101791 /* co-ml-starter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A5D6916827EA441E00101791 /* Build configuration list for PBXProject "co-ml-sample" */;
+			buildConfigurationList = A5D6916827EA441E00101791 /* Build configuration list for PBXProject "co-ml-starter" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -183,7 +181,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5D6916C27EA441E00101791 /* co-ml-sample */,
+				A5D6916C27EA441E00101791 /* co-ml-starter */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5AE34F527EE54EB00938E1F /* mydata.json in Resources */,
 				A5D6917827EA442000101791 /* Preview Assets.xcassets in Resources */,
 				A5D6917527EA442000101791 /* Assets.xcassets in Resources */,
 			);
@@ -206,15 +205,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5D6917327EA441E00101791 /* ContentView.swift in Sources */,
-				A5D6917F27EA446600101791 /* ClassificationController.swift in Sources */,
-				A5D6919427EA69C000101791 /* ToyClassifier.mlmodel in Sources */,
 				A5D6918A27EA466400101791 /* LiveCameraViewController.swift in Sources */,
 				A5D6919027EA48F900101791 /* Helpers.swift in Sources */,
 				A5D6918927EA466400101791 /* LiveCameraRepresentable.swift in Sources */,
 				A5D6917127EA441E00101791 /* co_ml_sampleApp.swift in Sources */,
 				A5D6918227EA44C300101791 /* PredictionStatus.swift in Sources */,
+				A5AE34F327EE54CD00938E1F /* Produce.mlmodel in Sources */,
 				A5D6918D27EA48B100101791 /* Constants.swift in Sources */,
-				A5D6919827EA7AF900101791 /* PetClassifier.mlmodel in Sources */,
+				A5AE34F727EE557700938E1F /* ClassifierData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,11 +342,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"co-ml-sample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"co-ml-starter/Preview Content\"";
 				DEVELOPMENT_TEAM = AVU6LDWEFT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "co-ml-sample/Info.plist";
+				INFOPLIST_FILE = "co-ml-starter/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -360,7 +358,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.mi.co-ml-sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.mi.co-ml-starter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -375,11 +373,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"co-ml-sample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"co-ml-starter/Preview Content\"";
 				DEVELOPMENT_TEAM = AVU6LDWEFT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "co-ml-sample/Info.plist";
+				INFOPLIST_FILE = "co-ml-starter/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -391,7 +389,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.mi.co-ml-sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.mi.co-ml-starter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -402,7 +400,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A5D6916827EA441E00101791 /* Build configuration list for PBXProject "co-ml-sample" */ = {
+		A5D6916827EA441E00101791 /* Build configuration list for PBXProject "co-ml-starter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5D6917927EA442000101791 /* Debug */,
@@ -411,7 +409,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5D6917B27EA442000101791 /* Build configuration list for PBXNativeTarget "co-ml-sample" */ = {
+		A5D6917B27EA442000101791 /* Build configuration list for PBXNativeTarget "co-ml-starter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5D6917C27EA442000101791 /* Debug */,

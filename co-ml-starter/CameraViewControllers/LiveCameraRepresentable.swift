@@ -10,13 +10,8 @@ import SwiftUI
 import AVFoundation
 
 struct LiveCameraRepresentable: UIViewControllerRepresentable {    
-    private var modelURL: URL
-    private var handleObservations: (LivePredictionResults, String, String) -> ()
     
-    init(modelURL: URL, handleObservations: @escaping (LivePredictionResults, String, String) -> () ) {
-        self.modelURL = modelURL
-        self.handleObservations = handleObservations
-    }
+    var handleObservations: (LivePredictionResults, String, String) -> ()
     
     func makeUIViewController(context: Context) -> LiveCameraViewController {
         let vc = LiveCameraViewController(handleObservations: handleObservations)

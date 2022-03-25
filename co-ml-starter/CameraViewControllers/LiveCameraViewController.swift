@@ -166,9 +166,6 @@ extension LiveCameraViewController: AVCaptureVideoDataOutputSampleBufferDelegate
             let topResult = observations.first            
             let compiledResults = Dictionary(uniqueKeysWithValues: predictionResultsMap)
             
-            // only store the image if the game is in progress & round has not yet been scored
-            let classifiedImage = UIImage()
-            
             DispatchQueue.main.async {
                 self.handleObservations(compiledResults, topResult!.identifier, String(format: "%.0f%%", topResult!.confidence * 100))
             }

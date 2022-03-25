@@ -1,6 +1,6 @@
 //
 //  co_ml_sampleApp.swift
-//  co-ml-sample
+//  co-ml-starter
 //
 //  Created by Tiffany Tseng on 3/22/22.
 //
