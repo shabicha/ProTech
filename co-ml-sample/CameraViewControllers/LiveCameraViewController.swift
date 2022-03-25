@@ -20,7 +20,7 @@ struct ValuePerCategory {
 final class LiveCameraViewController: UIViewController {
     private var model: VNCoreMLModel?
     private let visionResultsDisplayLayer = CALayer()
-    // handleObservations returns back the Vision classification results - [ValuesPerCategory] and [String] (the sorted label names) are used for generating the barchart from the results
+    // handleObservations returns back the Vision classification results, including a compiled dictionary, the top label, a nd top confidence score
     private var handleObservations: (LivePredictionResults, String, String) -> ()
     
     private(set) var rawVideoDimensions: CGSize = .zero
@@ -118,8 +118,7 @@ final class LiveCameraViewController: UIViewController {
         previewLayer?.contentsGravity = .resizeAspect
         previewLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
         previewLayer?.connection?.videoOrientation = videoOrientationFromCurrentDeviceOrientation()
-        let scaleFactor = 0.9
-        let dimension = min (liveVideoFeedDisplayLayer.frame.size.width * scaleFactor, liveVideoFeedDisplayLayer.frame.size.height * scaleFactor)
+        let dimension = min (liveVideoFeedDisplayLayer.frame.size.width, liveVideoFeedDisplayLayer.frame.size.height)
         previewLayer?.frame = CGRect(x: 0, y:0, width: dimension, height: dimension)
         
         guard let previewLayer = previewLayer else { return }
@@ -129,7 +128,7 @@ final class LiveCameraViewController: UIViewController {
 
 extension LiveCameraViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
     
-    // adapted from https://www.letsbuildthatapp.com/course_video?id=1252
+    // adapted from https://www.letsbuildthatapp.com/course_video?id=1592
     
     func captureOutput(
         _ output: AVCaptureOutput,
@@ -150,7 +149,7 @@ extension LiveCameraViewController: AVCaptureVideoDataOutputSampleBufferDelegate
         let context = CIContext()
         let cgImage = context.createCGImage(ciimage, from: ciimage.extent)
         let uiImage = UIImage(cgImage: cgImage!)
-        let uiImageResized = uiImage.scaleAndCropImage(uiImage, toSize: CGSize(width: Constants.imgDim, height: Constants.imgDim))
+        let uiImageResized = uiImage.scaleAndCropImage(uiImage, toSize: CGSize(width: 200.0, height: 200.0))
         let newCiImage = CIImage(image: uiImageResized)
     
         let request = VNCoreMLRequest(model: model) { request, error in

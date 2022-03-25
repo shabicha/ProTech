@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 import AVFoundation
 
+// MARK: Image Extensions
+
 public extension UIImage {
     func copyAndResize(uiImage: UIImage,
                        retina: Bool = true) -> UIImage? {
@@ -17,7 +19,7 @@ public extension UIImage {
         let height:CGFloat = uiImage.size.width
         let width:CGFloat = uiImage.size.height
         
-        let newWidth:CGFloat = Constants.imgDim
+        let newWidth:CGFloat = 200.0 
         let scale:CGFloat = newWidth / width
         let newHeight:CGFloat = height * scale
         

@@ -9,12 +9,10 @@ import Foundation
 import SwiftUI
 import AVFoundation
 
-struct LiveCameraRepresentable: UIViewControllerRepresentable {    
-    private var modelURL: URL
+struct LiveCameraRepresentable: UIViewControllerRepresentable {
     private var handleObservations: (LivePredictionResults, String, String) -> ()
     
-    init(modelURL: URL, handleObservations: @escaping (LivePredictionResults, String, String) -> () ) {
-        self.modelURL = modelURL
+    init(handleObservations: @escaping (LivePredictionResults, String, String) -> () ) {
         self.handleObservations = handleObservations
     }
     
