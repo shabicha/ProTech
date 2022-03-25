@@ -28,6 +28,7 @@ struct ContentView: View {
             print("could not find data")
         }
     }
+
     
     var body: some View {
         let predictionLabel = predictionStatus.topLabel
