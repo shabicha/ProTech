@@ -33,7 +33,6 @@ struct ContentView: View {
                 //                Text("Model Info: \(predictionStatus.modelObject.model.description)")
             }// VStack
             .background(Color.white)
-            .cornerRadius(20)
             .padding(15)
         }// ZStack
     }// body
