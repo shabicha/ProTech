@@ -11,24 +11,7 @@ import AVFoundation
 struct ContentView: View {
     
     @EnvironmentObject var predictionStatus: PredictionStatus
-    var classifierData: [ClassifierData] = []
-    
-    init(){
-        print("load classifier data")
-        if let url = Bundle.main.url(forResource: "mydata", withExtension: "json") {
-            do {
-                let jsonData = try Data(contentsOf: url)
-                let decoder = JSONDecoder()
-                classifierData = try decoder.decode([ClassifierData].self, from: jsonData)
-                print("classifierData: ", classifierData)
-            } catch {
-                print(error)
-            }
-        } else {
-            print("could not find data")
-        }
-    }
-
+    @StateObject var classifierViewModel = ClassifierViewModel()
     
     var body: some View {
         let predictionLabel = predictionStatus.topLabel
@@ -40,7 +23,7 @@ struct ContentView: View {
             }
             // TODO: The View that shows classification results - edit the styling below!
             HStack(alignment: .top) {
-                if let labelData = classifierData.filter { $0.label == predictionLabel }.first {
+                if let labelData = classifierViewModel.classifierData.filter { $0.label == predictionLabel }.first {
                     Text(labelData.emoji)
                         .font(.system(size: 100))
                         .padding(.bottom, 5)
@@ -68,5 +51,6 @@ struct ContentView: View {
             .cornerRadius(20)
             .padding(15)
         }// ZStack
+        .onAppear(perform: classifierViewModel.loadJSON)
     }// body
 }// View

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A562F07327EE7E7A00602D4E /* ClassifierData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A562F07127EE7E7A00602D4E /* ClassifierData.swift */; };
+		A5050A2027F37D4600C6CABA /* ClassifierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5050A1F27F37D4600C6CABA /* ClassifierViewModel.swift */; };
+		A562F07327EE7E7A00602D4E /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A562F07127EE7E7A00602D4E /* Classification.swift */; };
 		A562F07427EE7E7A00602D4E /* mydata.json in Resources */ = {isa = PBXBuildFile; fileRef = A562F07227EE7E7A00602D4E /* mydata.json */; };
 		A5AE34F327EE54CD00938E1F /* Produce.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A5AE34F227EE54CD00938E1F /* Produce.mlmodel */; };
 		A5D6917127EA441E00101791 /* co_ml_sampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6917027EA441E00101791 /* co_ml_sampleApp.swift */; };
@@ -22,7 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A562F07127EE7E7A00602D4E /* ClassifierData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifierData.swift; sourceTree = "<group>"; };
+		A5050A1F27F37D4600C6CABA /* ClassifierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierViewModel.swift; sourceTree = "<group>"; };
+		A562F07127EE7E7A00602D4E /* Classification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
 		A562F07227EE7E7A00602D4E /* mydata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mydata.json; sourceTree = "<group>"; };
 		A5AE34F227EE54CD00938E1F /* Produce.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Produce.mlmodel; sourceTree = "<group>"; };
 		A5D6916D27EA441E00101791 /* co-ml-starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "co-ml-starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +54,7 @@
 		A562F07027EE7E7A00602D4E /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				A562F07127EE7E7A00602D4E /* ClassifierData.swift */,
+				A562F07127EE7E7A00602D4E /* Classification.swift */,
 				A562F07227EE7E7A00602D4E /* mydata.json */,
 			);
 			path = Data;
@@ -80,6 +82,7 @@
 				A5D6919127EA5B4D00101791 /* Info.plist */,
 				A5D6917027EA441E00101791 /* co_ml_sampleApp.swift */,
 				A5D6917227EA441E00101791 /* ContentView.swift */,
+				A5050A1F27F37D4600C6CABA /* ClassifierViewModel.swift */,
 				A562F07027EE7E7A00602D4E /* Data */,
 				A5D6918E27EA48BA00101791 /* Helpers */,
 				A5D6917427EA442000101791 /* Assets.xcassets */,
@@ -211,8 +214,9 @@
 				A5D6917127EA441E00101791 /* co_ml_sampleApp.swift in Sources */,
 				A5D6918227EA44C300101791 /* PredictionStatus.swift in Sources */,
 				A5AE34F327EE54CD00938E1F /* Produce.mlmodel in Sources */,
+				A5050A2027F37D4600C6CABA /* ClassifierViewModel.swift in Sources */,
 				A5D6918D27EA48B100101791 /* Constants.swift in Sources */,
-				A562F07327EE7E7A00602D4E /* ClassifierData.swift in Sources */,
+				A562F07327EE7E7A00602D4E /* Classification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
