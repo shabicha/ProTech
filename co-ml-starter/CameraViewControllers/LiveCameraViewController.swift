@@ -56,7 +56,6 @@ final class LiveCameraViewController: UIViewController {
     ///
     /// - Parameter url: Model URL
     func runSession() throws {
-        // TODO - replace with model
         self.model = try? VNCoreMLModel(for: PredictionStatus().modelObject.model)
         session.startRunning()
     }
