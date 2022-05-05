@@ -1,11 +1,20 @@
-#  Co-ML Sample App
-An MVP demo of using an .mlmodel from Co-ML to show live classification results.  It opens up a camera view and shows the top classification result.
+#  CoreML Sample App
+An starter app that takes a CoreML (.mlmodel) file and can display live classification results from camera input. 
 
 ## Instructions
-1. Get an exported .mlmodel from the Co-ML app 
-2. Drag the .mlmodel file into the file directory of this app.
-3. Edit `Data > mydata.json` with the labels in your project
-4. If needed, edit `Data > ClassifierData.swift` to include the same structure as any edits you made to `mydata.json` 
-4. Run on device to view the demo.  
-4. To stylize, you can edit the contents of `ContentView` (look for the TODO comment)
+1. Import model & point to model class
+* Export the model from Co-ML and download the .mlmodel file to your computer
+* Drag the .mlmodel file into the starter app (under the `1-Model` folder)
+* In `PredictionStatus,` set `modelObject` to the name or your model.  For example, a model named `Produce.mlmodel` would be `var modelObject = Produce()`
+
+2. Edit Data (JSON & Swift)
+* Decide what type of information you want to appear in the app for each label.  See `2-Data > mydata.json` as an example.
+* Edit `2-Data > mydata.json` with the labels in your classifier and any associated data you want to appear (e.g., replace “water” or “emoji” with your custom content)
+* in `2-Data > Classification.swift`, edit based on the format of the data in your JSON file (change names of keys and provide type for value)
+
+
+2. Edit UI 
+* Classification UI: Edit `3-UI > PredictionResultView.swift` based on the content you want to appear when the classifier identifies an object
+* Launch screen: `3-UI > LaunchScreenView.swift` to customize the launch screen contents
+
 

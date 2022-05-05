@@ -1,0 +1,22 @@
+[
+    {
+        "label": "tomato",
+        "water": 3,
+        "emoji": "🍅"
+    },
+    {
+        "label": "orange",
+        "water": 14,
+        "emoji": "🍊"
+    },
+    {
+        "label": "avocado",
+        "water": 60,
+        "emoji": "🥑"
+    },
+    {
+        "label": "walnut",
+        "water": 5,
+        "emoji": "🥜"
+    }
+]
