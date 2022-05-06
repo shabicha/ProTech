@@ -14,6 +14,7 @@
 		A555EF2C27F3CF55006372C8 /* PredictionResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555EF2B27F3CF55006372C8 /* PredictionResultView.swift */; };
 		A562F07327EE7E7A00602D4E /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A562F07127EE7E7A00602D4E /* Classification.swift */; };
 		A562F07427EE7E7A00602D4E /* mydata.json in Resources */ = {isa = PBXBuildFile; fileRef = A562F07227EE7E7A00602D4E /* mydata.json */; };
+		A59292B728249C180083008B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59292B628249C180083008B /* AboutView.swift */; };
 		A5D55B00280FC4A500F52DB2 /* WaterFootprint.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A5D55AFF280FC4A500F52DB2 /* WaterFootprint.mlmodel */; };
 		A5D6917127EA441E00101791 /* coreML_starterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6917027EA441E00101791 /* coreML_starterApp.swift */; };
 		A5D6917327EA441E00101791 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6917227EA441E00101791 /* ContentView.swift */; };
@@ -34,6 +35,7 @@
 		A555EF2B27F3CF55006372C8 /* PredictionResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionResultView.swift; sourceTree = "<group>"; };
 		A562F07127EE7E7A00602D4E /* Classification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
 		A562F07227EE7E7A00602D4E /* mydata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mydata.json; sourceTree = "<group>"; };
+		A59292B628249C180083008B /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		A5D55AFF280FC4A500F52DB2 /* WaterFootprint.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WaterFootprint.mlmodel; sourceTree = "<group>"; };
 		A5D6916D27EA441E00101791 /* coreML-starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coreML-starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D6917027EA441E00101791 /* coreML_starterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreML_starterApp.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				A555EF2B27F3CF55006372C8 /* PredictionResultView.swift */,
+				A59292B628249C180083008B /* AboutView.swift */,
 				A5236B45280A1EE500DC9D7F /* LaunchScreenView.swift */,
 			);
 			path = "3-UI";
@@ -239,6 +242,7 @@
 				A5D6918A27EA466400101791 /* LiveCameraViewController.swift in Sources */,
 				A555EF2C27F3CF55006372C8 /* PredictionResultView.swift in Sources */,
 				A5236B4C280DE33100DC9D7F /* RoundedRectButtonStyle.swift in Sources */,
+				A59292B728249C180083008B /* AboutView.swift in Sources */,
 				A5D6919027EA48F900101791 /* Helpers.swift in Sources */,
 				A5D6918927EA466400101791 /* LiveCameraRepresentable.swift in Sources */,
 				A5D6917127EA441E00101791 /* coreML_starterApp.swift in Sources */,

@@ -29,8 +29,14 @@ struct PredictionResultView: View {
                 }
                 .padding(.init(top: 3, leading: 0, bottom: 5, trailing: 5))
                 
-                Text(labelData.water.description + (labelData.water > 1 ? " gallons" : " gallon"))
-                    .font(.subheadline)
+                HStack {
+                    Text(labelData.water.description + " ")
+                    if (labelData.water > 1) {
+                        Text("gallons")
+                    } else {
+                        Text("gallon")
+                    }
+                }
             }
             .padding(5)
             
