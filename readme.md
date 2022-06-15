@@ -16,6 +16,8 @@ An starter app that takes a CoreML (.mlmodel) file and can display live classifi
 2. Edit UI 
 * Classification UI: Edit `3-UI > PredictionResultView.swift` based on the content you want to appear when the classifier identifies an object.  If you want to view a preview of your UI, edit the PreviewProvider at the bottom of the doc to update the parameters passed to PredictionResultView to match your JSON format.
 * Launch screen: `3-UI > LaunchScreenView.swift` to customize the launch screen contents
-# Extra Credit: Add an About page to share who created the app. Edit `3-UI > AboutView.swift`
+
+## Extra Credit: Add an About page 
+* Edit `3-UI > AboutView.swift` to share details about who created the app 
 
 
