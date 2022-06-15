@@ -23,8 +23,10 @@ struct PredictionResultView: View {
                     .font(.title)
                 
                 HStack(spacing: 1) {
-                    ForEach(0...labelData.water-1, id: \.self) { index in
-                        Text("💧")
+                    if(labelData.water > 0) {
+                        ForEach(0...labelData.water-1, id: \.self) { index in
+                            Text("💧")
+                        }
                     }
                 }
                 .padding(.init(top: 3, leading: 0, bottom: 5, trailing: 5))
@@ -51,6 +53,7 @@ struct PredictionResultView: View {
 
 struct PredictionResultView_Previews: PreviewProvider {
     static var previews: some View {
+        // TODO: To update the preview in Canvas, edit the parameters passed to PredictionResultView to match the formatting of your JSON data
         PredictionResultView(labelData: Classification(label: "Unicorn", water: 1, emoji: "🦄"))
     }
 }

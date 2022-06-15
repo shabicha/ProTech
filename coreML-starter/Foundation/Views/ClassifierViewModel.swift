@@ -25,9 +25,7 @@ final class ClassifierViewModel: ObservableObject {
         }
     }
     
-    func getPredictionData(label: String) -> Classification {
-        let defaultClassification = Classification(label: "Unicorn", water: 1, emoji: "🦄")
-        
-        return classifierData.filter { $0.label == label }.first ?? defaultClassification
+    func getPredictionData(label: String) -> Classification {        
+        return classifierData.filter { $0.label == label }.first ?? Classification()
     }
 }
