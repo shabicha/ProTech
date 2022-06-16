@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A5050A2027F37D4600C6CABA /* ClassifierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5050A1F27F37D4600C6CABA /* ClassifierViewModel.swift */; };
+		A50A05F9285AAA9F008D0E36 /* WaterFootprint.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = A50A05F8285AAA9F008D0E36 /* WaterFootprint.mlpackage */; };
 		A5236B46280A1EE500DC9D7F /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5236B45280A1EE500DC9D7F /* LaunchScreenView.swift */; };
 		A5236B48280A1F0700DC9D7F /* ClassificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5236B47280A1F0700DC9D7F /* ClassificationView.swift */; };
 		A5236B4C280DE33100DC9D7F /* RoundedRectButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5236B4B280DE33100DC9D7F /* RoundedRectButtonStyle.swift */; };
@@ -15,7 +16,6 @@
 		A562F07327EE7E7A00602D4E /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A562F07127EE7E7A00602D4E /* Classification.swift */; };
 		A562F07427EE7E7A00602D4E /* mydata.json in Resources */ = {isa = PBXBuildFile; fileRef = A562F07227EE7E7A00602D4E /* mydata.json */; };
 		A59292B728249C180083008B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59292B628249C180083008B /* AboutView.swift */; };
-		A5D55B00280FC4A500F52DB2 /* WaterFootprint.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A5D55AFF280FC4A500F52DB2 /* WaterFootprint.mlmodel */; };
 		A5D6917127EA441E00101791 /* coreML_starterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6917027EA441E00101791 /* coreML_starterApp.swift */; };
 		A5D6917327EA441E00101791 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6917227EA441E00101791 /* ContentView.swift */; };
 		A5D6917527EA442000101791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D6917427EA442000101791 /* Assets.xcassets */; };
@@ -29,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		A5050A1F27F37D4600C6CABA /* ClassifierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierViewModel.swift; sourceTree = "<group>"; };
+		A50A05F8285AAA9F008D0E36 /* WaterFootprint.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = WaterFootprint.mlpackage; sourceTree = "<group>"; };
 		A5236B45280A1EE500DC9D7F /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		A5236B47280A1F0700DC9D7F /* ClassificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationView.swift; sourceTree = "<group>"; };
 		A5236B4B280DE33100DC9D7F /* RoundedRectButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectButtonStyle.swift; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		A562F07127EE7E7A00602D4E /* Classification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
 		A562F07227EE7E7A00602D4E /* mydata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mydata.json; sourceTree = "<group>"; };
 		A59292B628249C180083008B /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		A5D55AFF280FC4A500F52DB2 /* WaterFootprint.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WaterFootprint.mlmodel; sourceTree = "<group>"; };
 		A5D6916D27EA441E00101791 /* coreML-starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coreML-starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D6917027EA441E00101791 /* coreML_starterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreML_starterApp.swift; sourceTree = "<group>"; };
 		A5D6917227EA441E00101791 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		A5D6918627EA44F200101791 /* 1-Model */ = {
 			isa = PBXGroup;
 			children = (
-				A5D55AFF280FC4A500F52DB2 /* WaterFootprint.mlmodel */,
+				A50A05F8285AAA9F008D0E36 /* WaterFootprint.mlpackage */,
 				A5D6918127EA44C300101791 /* PredictionStatus.swift */,
 			);
 			path = "1-Model";
@@ -241,12 +241,12 @@
 				A5D6917327EA441E00101791 /* ContentView.swift in Sources */,
 				A5D6918A27EA466400101791 /* LiveCameraViewController.swift in Sources */,
 				A555EF2C27F3CF55006372C8 /* PredictionResultView.swift in Sources */,
+				A50A05F9285AAA9F008D0E36 /* WaterFootprint.mlpackage in Sources */,
 				A5236B4C280DE33100DC9D7F /* RoundedRectButtonStyle.swift in Sources */,
 				A59292B728249C180083008B /* AboutView.swift in Sources */,
 				A5D6919027EA48F900101791 /* Helpers.swift in Sources */,
 				A5D6918927EA466400101791 /* LiveCameraRepresentable.swift in Sources */,
 				A5D6917127EA441E00101791 /* coreML_starterApp.swift in Sources */,
-				A5D55B00280FC4A500F52DB2 /* WaterFootprint.mlmodel in Sources */,
 				A5D6918227EA44C300101791 /* PredictionStatus.swift in Sources */,
 				A5236B48280A1F0700DC9D7F /* ClassificationView.swift in Sources */,
 				A5050A2027F37D4600C6CABA /* ClassifierViewModel.swift in Sources */,

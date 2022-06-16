@@ -53,7 +53,6 @@ struct PredictionResultView: View {
 
 struct PredictionResultView_Previews: PreviewProvider {
     static var previews: some View {
-        // TODO: To update the preview in Canvas, edit the parameters passed to PredictionResultView to match the formatting of your JSON data
-        PredictionResultView(labelData: Classification(label: "Unicorn", water: 1, emoji: "🦄"))
+        PredictionResultView(labelData: Classification())
     }
 }
