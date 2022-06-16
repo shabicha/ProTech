@@ -6,8 +6,8 @@
 //
 
 struct Classification: Decodable {
-    // TODO: replace with the name of your keys from mydata.json
-    var label: String = ""
-    var water: Int = 0
-    var emoji: String = ""
+    // TODO: replace with the name of your keys from mydata.json and some default values
+    var label: String = "carrot"
+    var water: Int = 5
+    var emoji: String = "🥕"
 }
