@@ -2,8 +2,6 @@
 //  PredictionResultView.swift
 //  coreML-starter
 //
-//  
-//
 
 import SwiftUI
 
@@ -13,41 +11,35 @@ struct PredictionResultView: View {
     var body: some View {
         // TODO: The View that shows classification results - edit the styling below!
         
-        HStack(alignment: .top) {
+        VStack(alignment: .center) {
+            Text(labelData.label.capitalized)
+                .font(.largeTitle)
+            
             Text(labelData.emoji)
                 .font(.system(size: 100))
                 .padding(.bottom, 5)
             
-            VStack(alignment: .leading) {
-                Text(labelData.label.capitalized)
-                    .font(.title)
-                
-                HStack(spacing: 1) {
-                    if(labelData.water > 0) {
-                        ForEach(0...labelData.water-1, id: \.self) { index in
-                            Text("💧")
-                        }
-                    }
-                }
-                .padding(.init(top: 3, leading: 0, bottom: 5, trailing: 5))
-                
-                HStack {
-                    Text(labelData.water.description + " ")
-                    if (labelData.water > 1) {
-                        Text("gallons")
-                    } else {
-                        Text("gallon")
+            HStack(alignment: .center, spacing: 1) {
+                if(labelData.water > 0) {
+                    ForEach(0...labelData.water-1, id: \.self) { index in
+                        Text("💧")
                     }
                 }
             }
-            .padding(5)
             
+            HStack {
+                Text(labelData.water.description)
+                if (labelData.water > 1) {
+                    Text("gallons")
+                } else {
+                    Text("gallon")
+                }
+            }
+            .padding(15)
             
-        }// HStack
-        .background(Color.white)
-        .cornerRadius(20)
-        .padding(15)
-        .shadow(radius: 5)
+        }// VStack
+        .frame(width: 400)
+        .padding()
     }
 }
 

@@ -76,14 +76,13 @@ struct LaunchScreenView: View {
                 NavigationLink(destination: ClassificationView()){
                     Text("Start")
                 }
-                .buttonStyle(RoundedRectButtonStyle())
+                .buttonStyle(RoundedRectButtonStyle(buttonColor: .blue))
                 .padding()
                 
-                // byline
-                // TODO: Add your names
-                Text("Created by Tiffany Tseng")
-                    .font(.caption)
-                    .padding()
+                // about page
+                NavigationLink(destination: AboutView()){
+                    Text("Credits")
+                }
             }
             .padding()
             .frame(maxWidth: 500)

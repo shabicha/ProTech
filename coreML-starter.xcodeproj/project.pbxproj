@@ -12,8 +12,7 @@
 		A5236B46280A1EE500DC9D7F /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5236B45280A1EE500DC9D7F /* LaunchScreenView.swift */; };
 		A5236B48280A1F0700DC9D7F /* ClassificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5236B47280A1F0700DC9D7F /* ClassificationView.swift */; };
 		A5236B4C280DE33100DC9D7F /* RoundedRectButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5236B4B280DE33100DC9D7F /* RoundedRectButtonStyle.swift */; };
-		A5287C97286CF66800A14D68 /* RightPredictionResultPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5287C96286CF66800A14D68 /* RightPredictionResultPanelView.swift */; };
-		A555EF2C27F3CF55006372C8 /* PredictionResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555EF2B27F3CF55006372C8 /* PredictionResultView.swift */; };
+		A5287C97286CF66800A14D68 /* PredictionResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5287C96286CF66800A14D68 /* PredictionResultView.swift */; };
 		A562F07327EE7E7A00602D4E /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A562F07127EE7E7A00602D4E /* Classification.swift */; };
 		A562F07427EE7E7A00602D4E /* mydata.json in Resources */ = {isa = PBXBuildFile; fileRef = A562F07227EE7E7A00602D4E /* mydata.json */; };
 		A59292B728249C180083008B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59292B628249C180083008B /* AboutView.swift */; };
@@ -34,8 +33,7 @@
 		A5236B45280A1EE500DC9D7F /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		A5236B47280A1F0700DC9D7F /* ClassificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationView.swift; sourceTree = "<group>"; };
 		A5236B4B280DE33100DC9D7F /* RoundedRectButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectButtonStyle.swift; sourceTree = "<group>"; };
-		A5287C96286CF66800A14D68 /* RightPredictionResultPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightPredictionResultPanelView.swift; sourceTree = "<group>"; };
-		A555EF2B27F3CF55006372C8 /* PredictionResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionResultView.swift; sourceTree = "<group>"; };
+		A5287C96286CF66800A14D68 /* PredictionResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionResultView.swift; sourceTree = "<group>"; };
 		A562F07127EE7E7A00602D4E /* Classification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
 		A562F07227EE7E7A00602D4E /* mydata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mydata.json; sourceTree = "<group>"; };
 		A59292B628249C180083008B /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
@@ -66,10 +64,9 @@
 		A5236B4A280DDC2700DC9D7F /* 3-UI */ = {
 			isa = PBXGroup;
 			children = (
-				A555EF2B27F3CF55006372C8 /* PredictionResultView.swift */,
 				A59292B628249C180083008B /* AboutView.swift */,
 				A5236B45280A1EE500DC9D7F /* LaunchScreenView.swift */,
-				A5287C96286CF66800A14D68 /* RightPredictionResultPanelView.swift */,
+				A5287C96286CF66800A14D68 /* PredictionResultView.swift */,
 			);
 			path = "3-UI";
 			sourceTree = "<group>";
@@ -243,13 +240,12 @@
 			files = (
 				A5D6917327EA441E00101791 /* ContentView.swift in Sources */,
 				A5D6918A27EA466400101791 /* LiveCameraViewController.swift in Sources */,
-				A555EF2C27F3CF55006372C8 /* PredictionResultView.swift in Sources */,
 				A50A05F9285AAA9F008D0E36 /* WaterFootprint.mlpackage in Sources */,
 				A5236B4C280DE33100DC9D7F /* RoundedRectButtonStyle.swift in Sources */,
 				A59292B728249C180083008B /* AboutView.swift in Sources */,
 				A5D6919027EA48F900101791 /* Helpers.swift in Sources */,
 				A5D6918927EA466400101791 /* LiveCameraRepresentable.swift in Sources */,
-				A5287C97286CF66800A14D68 /* RightPredictionResultPanelView.swift in Sources */,
+				A5287C97286CF66800A14D68 /* PredictionResultView.swift in Sources */,
 				A5D6917127EA441E00101791 /* coreML_starterApp.swift in Sources */,
 				A5D6918227EA44C300101791 /* PredictionStatus.swift in Sources */,
 				A5236B48280A1F0700DC9D7F /* ClassificationView.swift in Sources */,

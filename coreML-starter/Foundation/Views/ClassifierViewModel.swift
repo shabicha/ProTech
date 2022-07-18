@@ -9,6 +9,7 @@ import Foundation
 
 final class ClassifierViewModel: ObservableObject {
     @Published var classifierData: [Classification] = []
+    @Published var dataWhenAboutTapped:Int = 0
     
     func loadJSON() {
         print("load JSON")
