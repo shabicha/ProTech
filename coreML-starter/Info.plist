@@ -4,6 +4,10 @@
 <dict>
 	<key>Enable Multiple Windows</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>CormorantGaramond-Bold.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

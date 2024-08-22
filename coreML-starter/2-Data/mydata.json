@@ -1,22 +1,30 @@
 [
     {
-        "label": "tomato",
-        "water": 3,
-        "emoji": "🍅"
+        "label": "Altria Theatre",
+        "imageName": "Theater"
     },
     {
-        "label": "orange",
-        "water": 14,
-        "emoji": "🍊"
+        "label": "Cathedral of the Sacred Heart",
+        "imageName": "Cathedral"
     },
     {
-        "label": "avocado",
-        "water": 60,
-        "emoji": "🥑"
+        "label": "Virginia War Memorial",
+        "imageName": "War"
     },
     {
-        "label": "walnut",
-        "water": 5,
-        "emoji": "🥜"
-    }
+        "label": "VCU Cary Street Gym",
+        "imageName": "Gym"
+    },
+    {
+        "label": "James Branch Cabell Library",
+        "imageName": "Library"
+    },
+    {
+        "label": "Siegel Center",
+        "imageName": "Siegel"
+    },
+    {
+        "label": "VCU Institution for Contemporary Art",
+        "imageName": "Art"
+    },
 ]

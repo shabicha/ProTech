@@ -2,7 +2,7 @@
 //  LaunchScreenView.swift
 //  coreML-starter
 //
-//  
+//
 //
 
 import SwiftUI
@@ -10,91 +10,49 @@ import SwiftUI
 struct LaunchScreenView: View {
     var body: some View {
         VStack {
-            VStack {
-                // header image:
-                // TODO: replace with your own image.  Drag an image from your computer to assets.xcassets and add the name of your image below
-                Image("water-footprint")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 250)
-                // image from: https://www.pngitem.com/middle/ioRbwwh_what-is-water-footprint-safe-water-save-life/
+            VStack(spacing: 20) {
                 
                 // title
-                // TODO: Replace app title
-                Text("Water Footprint")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding()
-                    .foregroundColor(.blue)
+                Text("PROTECH")
+                    .font(Font.custom("CormorantGaramond-Bold", size: 75)).padding(.top, 30)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 20)
+                    
                 
-                Divider().frame(maxWidth: 300)
+                // header image:
+                Image("campus")
+                    .resizable().aspectRatio(contentMode: .fit)
                 
-                // info
-                // TODO: Replace with description of your app
-                VStack(spacing: 20) {
-                    Text("Discover how much water is needed to grow our food!")
-                    
-                    Text("This app uses the camera and AR (powered by ML) to show the environmental impact of different foods.")
-                    
-                    Text("Gather these ingredients to get started.")
-                }
-                .padding()
-                .multilineTextAlignment(.center)
-                
-                // item list
-                // TODO: replace with the names of your items
-                HStack(spacing: 10) {
-                    VStack {
-                        Text("🍅")
-                        Text("Tomato")
-                    }
-                    .padding()
-                    
-                    VStack {
-                        Text("🍊")
-                        Text("Orange")
-                    }
-                    .padding()
-                    
-                    VStack {
-                        Text("🥑")
-                        Text("Avocado")
-                    }
-                    .padding()
-                    
-                    VStack {
-                        Text("🥜")
-                        Text("Walnut")
-                    }
-                    .padding()
-                }
-                .background(Color(UIColor.secondarySystemBackground))
-                .cornerRadius(10)
-                .padding()
-                
-                // start button
+
+                // classification button
                 NavigationLink(destination: ClassificationView()){
                     Text("Start")
                 }
-                .buttonStyle(RoundedRectButtonStyle(buttonColor: .blue))
+                .buttonStyle(RoundedRectButtonStyle(buttonColor: Color(red: 0.13, green: 0.46, blue: 0.58)))
                 .padding()
                 
-                // about page
-                NavigationLink(destination: AboutView()){
-                    Text("Credits")
+                
+                
+                // resources page
+                NavigationLink(destination: ResourcesView()){
+                    Text("Resources")
                 }
+                .buttonStyle(RoundedRectButtonStyle(buttonColor: Color(red: 0.13, green: 0.46, blue: 0.58)))
+                .padding()
+                
             }
-            .padding()
-            .frame(maxWidth: 500)
+            .frame(maxWidth: 600)
             .background(Color.white)
             .cornerRadius(25)
             .shadow(radius: 5)
             
         }// VStack
+        .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(hex: 0xD5F4FF, opacity: 1.0))
+        .background(Color(red: 0.93, green: 0.95, blue: 0.95))
         .edgesIgnoringSafeArea(.all)
         .navigationBarHidden(true)
+        
     }
 }
 

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		556306E82A7F553700E48EAF /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556306E72A7F553700E48EAF /* ResourcesView.swift */; };
+		556306EB2A7F5A1D00E48EAF /* CormorantGaramond-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 556306EA2A7F5A1D00E48EAF /* CormorantGaramond-Bold.ttf */; };
+		556306ED2A7F66B700E48EAF /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 556306EC2A7F66B700E48EAF /* alarm.mp3 */; };
+		556306F02A7FD2D100E48EAF /* phone call.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 556306EF2A7FD2D100E48EAF /* phone call.mp3 */; };
+		556306F42A7FE2B000E48EAF /* ResultsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556306F32A7FE2B000E48EAF /* ResultsPageView.swift */; };
+		556306F62A7FE37B00E48EAF /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556306F52A7FE37B00E48EAF /* ReportView.swift */; };
+		558672E92A8017A600CFD57D /* Protech.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 558672E82A8017A600CFD57D /* Protech.mlmodel */; };
 		A5050A2027F37D4600C6CABA /* ClassifierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5050A1F27F37D4600C6CABA /* ClassifierViewModel.swift */; };
 		A50A05F9285AAA9F008D0E36 /* WaterFootprint.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = A50A05F8285AAA9F008D0E36 /* WaterFootprint.mlpackage */; };
 		A5236B46280A1EE500DC9D7F /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5236B45280A1EE500DC9D7F /* LaunchScreenView.swift */; };
@@ -28,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		556306E72A7F553700E48EAF /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
+		556306EA2A7F5A1D00E48EAF /* CormorantGaramond-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CormorantGaramond-Bold.ttf"; sourceTree = "<group>"; };
+		556306EC2A7F66B700E48EAF /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
+		556306EF2A7FD2D100E48EAF /* phone call.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "phone call.mp3"; sourceTree = "<group>"; };
+		556306F32A7FE2B000E48EAF /* ResultsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPageView.swift; sourceTree = "<group>"; };
+		556306F52A7FE37B00E48EAF /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		558672E82A8017A600CFD57D /* Protech.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Protech.mlmodel; sourceTree = "<group>"; };
 		A5050A1F27F37D4600C6CABA /* ClassifierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierViewModel.swift; sourceTree = "<group>"; };
 		A50A05F8285AAA9F008D0E36 /* WaterFootprint.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = WaterFootprint.mlpackage; sourceTree = "<group>"; };
 		A5236B45280A1EE500DC9D7F /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
@@ -61,11 +75,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		556306E92A7F5A1D00E48EAF /* Cormorant_Garamond */ = {
+			isa = PBXGroup;
+			children = (
+				556306EA2A7F5A1D00E48EAF /* CormorantGaramond-Bold.ttf */,
+			);
+			path = Cormorant_Garamond;
+			sourceTree = "<group>";
+		};
 		A5236B4A280DDC2700DC9D7F /* 3-UI */ = {
 			isa = PBXGroup;
 			children = (
 				A59292B628249C180083008B /* AboutView.swift */,
+				556306F32A7FE2B000E48EAF /* ResultsPageView.swift */,
+				556306F52A7FE37B00E48EAF /* ReportView.swift */,
 				A5236B45280A1EE500DC9D7F /* LaunchScreenView.swift */,
+				556306E72A7F553700E48EAF /* ResourcesView.swift */,
 				A5287C96286CF66800A14D68 /* PredictionResultView.swift */,
 			);
 			path = "3-UI";
@@ -121,7 +146,10 @@
 		A5D6916F27EA441E00101791 /* coreML-starter */ = {
 			isa = PBXGroup;
 			children = (
+				556306EF2A7FD2D100E48EAF /* phone call.mp3 */,
+				556306EC2A7F66B700E48EAF /* alarm.mp3 */,
 				A5D6919127EA5B4D00101791 /* Info.plist */,
+				556306E92A7F5A1D00E48EAF /* Cormorant_Garamond */,
 				A5D6918627EA44F200101791 /* 1-Model */,
 				A562F07027EE7E7A00602D4E /* 2-Data */,
 				A5236B4A280DDC2700DC9D7F /* 3-UI */,
@@ -144,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				A50A05F8285AAA9F008D0E36 /* WaterFootprint.mlpackage */,
+				558672E82A8017A600CFD57D /* Protech.mlmodel */,
 				A5D6918127EA44C300101791 /* PredictionStatus.swift */,
 			);
 			path = "1-Model";
@@ -227,7 +256,10 @@
 			files = (
 				A562F07427EE7E7A00602D4E /* mydata.json in Resources */,
 				A5D6917827EA442000101791 /* Preview Assets.xcassets in Resources */,
+				556306EB2A7F5A1D00E48EAF /* CormorantGaramond-Bold.ttf in Resources */,
 				A5D6917527EA442000101791 /* Assets.xcassets in Resources */,
+				556306F02A7FD2D100E48EAF /* phone call.mp3 in Resources */,
+				556306ED2A7F66B700E48EAF /* alarm.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,8 +273,11 @@
 				A5D6917327EA441E00101791 /* ContentView.swift in Sources */,
 				A5D6918A27EA466400101791 /* LiveCameraViewController.swift in Sources */,
 				A50A05F9285AAA9F008D0E36 /* WaterFootprint.mlpackage in Sources */,
+				556306F42A7FE2B000E48EAF /* ResultsPageView.swift in Sources */,
 				A5236B4C280DE33100DC9D7F /* RoundedRectButtonStyle.swift in Sources */,
+				556306E82A7F553700E48EAF /* ResourcesView.swift in Sources */,
 				A59292B728249C180083008B /* AboutView.swift in Sources */,
+				558672E92A8017A600CFD57D /* Protech.mlmodel in Sources */,
 				A5D6919027EA48F900101791 /* Helpers.swift in Sources */,
 				A5D6918927EA466400101791 /* LiveCameraRepresentable.swift in Sources */,
 				A5287C97286CF66800A14D68 /* PredictionResultView.swift in Sources */,
@@ -250,6 +285,7 @@
 				A5D6918227EA44C300101791 /* PredictionStatus.swift in Sources */,
 				A5236B48280A1F0700DC9D7F /* ClassificationView.swift in Sources */,
 				A5050A2027F37D4600C6CABA /* ClassifierViewModel.swift in Sources */,
+				556306F62A7FE37B00E48EAF /* ReportView.swift in Sources */,
 				A5D6918D27EA48B100101791 /* Constants.swift in Sources */,
 				A562F07327EE7E7A00602D4E /* Classification.swift in Sources */,
 				A5236B46280A1EE500DC9D7F /* LaunchScreenView.swift in Sources */,
@@ -383,7 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"coreML-starter/Preview Content\"";
-				DEVELOPMENT_TEAM = AVU6LDWEFT;
+				DEVELOPMENT_TEAM = 9CA64G68D8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "coreML-starter/Info.plist";
@@ -398,7 +434,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.coreML-starter";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jessiczerski.coreML-starter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -414,7 +450,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"coreML-starter/Preview Content\"";
-				DEVELOPMENT_TEAM = AVU6LDWEFT;
+				DEVELOPMENT_TEAM = 9CA64G68D8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "coreML-starter/Info.plist";
@@ -429,7 +465,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.coreML-starter";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jessiczerski.coreML-starter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -71,21 +71,25 @@
       "size" : "40x40"
     },
     {
+      "filename" : "ver4 1.jpg",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
     },
     {
+      "filename" : "ver4.jpg",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
     },
     {
+      "filename" : "ver4 2.jpg",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
+      "filename" : "ver4.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

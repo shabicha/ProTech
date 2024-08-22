@@ -6,6 +6,7 @@
 import SwiftUI
 
 struct PredictionResultView: View {
+    @State private var showingAlert = false
     private(set) var labelData: Classification
     
     var body: some View {
@@ -13,33 +14,33 @@ struct PredictionResultView: View {
         
         VStack(alignment: .center) {
             Text(labelData.label.capitalized)
-                .font(.largeTitle)
+                .font(Font.custom("CormorantGaramond-Bold", size: 50))
             
-            Text(labelData.emoji)
-                .font(.system(size: 100))
-                .padding(.bottom, 5)
+            Image(labelData.imageName).resizable().aspectRatio(contentMode: .fit)
             
-            HStack(alignment: .center, spacing: 1) {
-                if(labelData.water > 0) {
-                    ForEach(0...labelData.water-1, id: \.self) { index in
-                        Text("💧")
-                    }
-                }
+            
+            NavigationLink(destination: ResultsPageView()){
+                Text("info")
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 5)
+                    .font(.title)
             }
+            .buttonStyle(RoundedRectButtonStyle(buttonColor: Color.red))
+            .padding()
             
-            HStack {
-                Text(labelData.water.description)
-                if (labelData.water > 1) {
-                    Text("gallons")
-                } else {
-                    Text("gallon")
-                }
-            }
-            .padding(15)
-            
+
+
+
         }// VStack
         .frame(width: 400)
         .padding()
+        
+        
+     
+                
+                
+        
+        
     }
 }
 
